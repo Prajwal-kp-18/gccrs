@@ -3302,7 +3302,7 @@ class RangeExpr : public ExprWithoutBlock
 
   // Some visitors still check for attributes on RangeExprs, and they will need
   // to be supported in the future - so keep that for now
-  std::vector<Attribute> empty_attributes = {};
+  static std::vector<Attribute> empty_attributes;
 
 protected:
   // outer attributes not allowed before range expressions

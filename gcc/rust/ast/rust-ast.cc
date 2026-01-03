@@ -43,6 +43,9 @@ along with GCC; see the file COPYING3.  If not see
 namespace Rust {
 namespace AST {
 
+// Static member definition for RangeExpr
+std::vector<Attribute> RangeExpr::empty_attributes;
+
 SingleASTNode::SingleASTNode (SingleASTNode const &other)
 {
   kind = other.kind;
